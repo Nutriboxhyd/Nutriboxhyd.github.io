@@ -1,6 +1,6 @@
-# Fruitoholic Static Website
+# Nutribox Static Website
 
-This is a static website for Fruitoholic based on the provided product catalog.
+This is a static website for Nutribox based on the provided product catalog.
 
 ## 💻 How to Use
 
