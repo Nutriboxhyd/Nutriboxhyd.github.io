@@ -2,54 +2,146 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fff;
+    color: #333;
 }
-header, nav, footer {
-    background-color: #f8f8f8;
-    padding: 1em;
-    text-align: center;
+
+/* --- Header & Nav --- */
+header {
+    background-color: #fef3f7;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #8e44ad;
+}
+
+header p {
+    margin: 0.2em 0 0;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #555;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
 }
+
 nav ul li {
-    display: inline;
-    margin: 0 1em;
+    margin: 0;
 }
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    color: #8e44ad;
+}
+
+/* --- Highlighted Section (Small/Large/Juices) --- */
+.available {
+    background-color: #f0e9ff;
+    padding: 2.5em 1em;
+    text-align: center;
+}
+
+.available h2 {
+    margin-bottom: 1em;
+    font-size: 1.8em;
+}
+
+.category {
+    margin: 1.5em auto;
+    display: inline-block;
+    width: 250px;
+    padding: 1em;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.category h3 {
+    color: #8e44ad;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.category ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+.category ul li {
+    margin: 0.3em 0;
+}
+
+/* --- Product Cards --- */
 .products {
+    background-color: #fff8e1;
     padding: 2em;
     text-align: center;
 }
+
 .product-card {
     border: 1px solid #ccc;
     margin: 1em;
     padding: 1em;
     display: inline-block;
     width: 200px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
+
 .product-card img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
+
+/* --- Contact Section --- */
 .contact {
-    background-color: #f0f0f0;
+    background-color: #e0f7fa;
     padding: 2em;
     text-align: center;
 }
+
+/* --- Social Links --- */
 .social-links {
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
     background-color: #fff0f5;
 }
+
 .social-links a {
     margin: 0 0.5em;
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
+
 .social-links a:hover {
     color: #e91e63;
 }
+
+/* --- Footer --- */
 footer {
     font-size: 0.9em;
     text-align: center;
@@ -57,6 +149,7 @@ footer {
     background-color: #f8f8f8;
 }
 
+/* --- Enquiry Form (Optional for contact.html) --- */
 .contact-form {
     background-color: #f9f9f9;
     padding: 3em 1em;
@@ -101,14 +194,18 @@ footer {
 .contact-form button:hover {
     background-color: #6d3291;
 }
+
+/* --- Subscription Plans (subscriptions.html) --- */
 .subscriptions {
     background-color: #f8f8f8;
     padding: 2em;
     text-align: center;
 }
+
 .subscriptions h2 {
     margin-bottom: 1em;
 }
+
 .plan {
     display: inline-block;
     width: 250px;
@@ -117,46 +214,19 @@ footer {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #ffffff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
+
 .plan h3 {
     color: #8e44ad;
 }
+
 .plan ul {
     list-style: none;
     padding: 0;
 }
+
 .plan ul li {
     margin: 0.5em 0;
     font-weight: bold;
 }
-.available {
-    background-color: #f9f9f9;
-    padding: 2em;
-    text-align: center;
-}
-.available h2 {
-    margin-bottom: 1em;
-}
-.category {
-    margin: 1.5em auto;
-    display: inline-block;
-    width: 250px;
-    padding: 1em;
-    background: #ffffff;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    vertical-align: top;
-}
-.category h3 {
-    color: #8e44ad;
-    margin-bottom: 0.5em;
-}
-.category ul {
-    list-style: none;
-    padding: 0;
-}
-.category ul li {
-    margin: 0.3em 0;
-}
-
-
