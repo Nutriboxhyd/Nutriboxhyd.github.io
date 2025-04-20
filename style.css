@@ -56,3 +56,48 @@ footer {
     padding: 1em;
     background-color: #f8f8f8;
 }
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 3em 1em;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.contact-form .icon {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #8e44ad;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 0.7em;
+    margin: 0.5em 0;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 0.7em 2em;
+    font-size: 1em;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #6d3291;
+}
