@@ -1,0 +1,47 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NUTRIBOX | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NUTRIBOX</h1>
+        <p>We’d love to hear from you!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>           
+            <li><a href="subscriptions.html">Subscriptions</a></li>
+            <li><a href="about.html">About Us</a></li> 
+            <li><a href="career.html">Career</a></li>           
+            <li><a href="contact.html">Contact</a></li>           
+        </ul>
+    </nav>
+
+    <section class="contact-form">
+        <h2>Contact / Enquiry Form</h2>
+        <form action="https://formsubmit.co/nutriboxhyd@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yourusername.github.io/thankyou.html">
+
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" name="phone" required><br>
+
+            <label for="area">Area / Locality:</label><br>
+            <input type="text" name="area" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea name="message" rows="5" required></textarea><br>
+
+            <button type="submit">Send Enquiry</button>
+        </form>
+    </section>
+</body>
+</html>
