@@ -36,6 +36,20 @@ nav ul li {
     padding: 2em;
     text-align: center;
 }
+.social-links {
+    text-align: center;
+    padding: 1em;
+    background-color: #fff0f5;
+}
+.social-links a {
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.social-links a:hover {
+    color: #e91e63;
+}
 footer {
     font-size: 0.9em;
     text-align: center;
