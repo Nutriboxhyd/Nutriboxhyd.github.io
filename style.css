@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -52,68 +53,104 @@ nav ul li a:hover {
     color: #8e44ad;
 }
 
-/* --- Highlighted Section (Small/Large/Juices) --- */
-.available {
-    background-color: #f0e9ff;
-    padding: 2.5em 1em;
+/* --- What's in the Nutribox Section --- */
+.whats-inside {
+    background-color: #f3f9f1;
+    padding: 3em 1.5em;
     text-align: center;
 }
 
-.available h2 {
-    margin-bottom: 1em;
-    font-size: 1.8em;
+.whats-inside h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    color: #2e7d32;
 }
 
-.category {
-    margin: 1.5em auto;
-    display: inline-block;
+.fruit-section {
+    margin-bottom: 3em;
+}
+
+.fruit-section h3 {
+    font-size: 1.5em;
+    color: #388e3c;
+    margin-bottom: 1em;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+/* --- Product Cards & Subscriptions --- */
+.item-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
     width: 250px;
     padding: 1em;
-    background: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    vertical-align: top;
-    text-align: left;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-}
-
-.category h3 {
-    color: #8e44ad;
-    margin-bottom: 0.5em;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.category ul {
-    list-style-type: disc;
-    padding-left: 1.5em;
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-.category ul li {
-    margin: 0.3em 0;
+.item-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.8em;
 }
 
-/* --- Product Cards --- */
-.products {
-    background-color: #fff8e1;
+.item-card h4 {
+    margin: 0.3em 0 0.2em;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.item-card p {
+    font-size: 0.95em;
+    color: #666;
+    margin: 0.2em 0;
+}
+
+.item-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-card ul li {
+    margin: 0.4em 0;
+    font-weight: bold;
+}
+
+/* --- Subscriptions Page Layout --- */
+.subscriptions {
+    background-color: #f8f8f8;
     padding: 2em;
     text-align: center;
 }
 
-.product-card {
-    border: 1px solid #ccc;
-    margin: 1em;
-    padding: 1em;
-    display: inline-block;
-    width: 200px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+.subscriptions h2 {
+    margin-bottom: 1.5em;
+    color: #8e44ad;
+    font-size: 1.8em;
 }
 
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+.subscriptions .items {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 1em;
 }
 
 /* --- Contact Section --- */
@@ -123,8 +160,22 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* --- Social Links --- */
+.social-links {
+    text-align: center;
+    padding: 1.5em;
+    background-color: #fff0f5;
+}
+
+.social-links p {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2em;
+    flex-wrap: wrap;
+}
+
 .social-links a {
-    margin: 0 0.8em;
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -138,11 +189,9 @@ nav ul li a:hover {
 }
 
 .social-links a img {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
+    width: 20px;
+    height: 20px;
 }
-
 
 /* --- Footer --- */
 footer {
@@ -152,7 +201,7 @@ footer {
     background-color: #f8f8f8;
 }
 
-/* --- Enquiry Form (Optional for contact.html) --- */
+/* --- Enquiry Form --- */
 .contact-form {
     background-color: #f9f9f9;
     padding: 3em 1em;
@@ -196,114 +245,4 @@ footer {
 
 .contact-form button:hover {
     background-color: #6d3291;
-}
-
-/* --- Subscription Plans (subscriptions.html) --- */
-.subscriptions .items {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-top: 1em;
-}
-
-
-.item-card {
-    display: inline-block;
-    width: 250px;
-    background-color: #ffffff;
-    padding: 1.2em;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    text-align: center;
-}
-
-.item-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 0.8em;
-}
-
-.item-card h4 {
-    color: #8e44ad;
-    margin-bottom: 0.5em;
-}
-
-.item-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.item-card ul li {
-    margin: 0.4em 0;
-    font-weight: bold;
-}
-
-/* --- What's in the Nutribox Section --- */
-.whats-inside {
-    background-color: #f3f9f1;
-    padding: 3em 1.5em;
-    text-align: center;
-}
-
-.whats-inside h2 {
-    font-size: 2em;
-    margin-bottom: 1.5em;
-    color: #2e7d32;
-}
-
-.fruit-section {
-    margin-bottom: 3em;
-}
-
-.fruit-section h3 {
-    font-size: 1.5em;
-    color: #388e3c;
-    margin-bottom: 1em;
-}
-
-.items {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5em;
-}
-
-.item-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.05);
-    width: 250px;
-    padding: 1em;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.item-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
-.item-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 0.8em;
-}
-
-.item-card h4 {
-    margin: 0.3em 0 0.2em;
-    font-size: 1.1em;
-    color: #2c3e50;
-}
-
-.item-card p {
-    font-size: 0.95em;
-    color: #666;
-    margin: 0.2em 0;
 }
