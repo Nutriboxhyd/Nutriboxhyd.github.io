@@ -153,6 +153,30 @@ nav ul li a:hover {
     padding-top: 1em;
 }
 
+.subscribe-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1em;
+    padding: 0.6em 1.2em;
+    background-color: #25D366;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn img.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.subscribe-btn:hover {
+    background-color: #128C7E;
+}
+
 /* --- Contact Section --- */
 .contact {
     background-color: #e0f7fa;
