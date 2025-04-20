@@ -204,8 +204,11 @@ footer {
     justify-content: center;
     gap: 2em;
     flex-wrap: wrap;
-    margin-top: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 1em;
 }
+
 
 .item-card {
     display: inline-block;
