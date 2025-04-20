@@ -129,4 +129,34 @@ footer {
     margin: 0.5em 0;
     font-weight: bold;
 }
+.available {
+    background-color: #f9f9f9;
+    padding: 2em;
+    text-align: center;
+}
+.available h2 {
+    margin-bottom: 1em;
+}
+.category {
+    margin: 1.5em auto;
+    display: inline-block;
+    width: 250px;
+    padding: 1em;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+.category h3 {
+    color: #8e44ad;
+    margin-bottom: 0.5em;
+}
+.category ul {
+    list-style: none;
+    padding: 0;
+}
+.category ul li {
+    margin: 0.3em 0;
+}
+
 
